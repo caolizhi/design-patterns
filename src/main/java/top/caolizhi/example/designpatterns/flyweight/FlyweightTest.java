@@ -9,6 +9,14 @@ public class FlyweightTest {
 		flyweight1.operate();
 		flyweight2.operate();
 
+		String str1 = "和谐";
+		String str2 = "社会";
+		String str3 = "和谐社会";
+		String str4;
+		str4 = str1 + str2;
+		System.out.println(str4 == str3);
+
+		System.out.println(str4.intern() == str3);
 	}
 
 }
